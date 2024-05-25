@@ -1,10 +1,9 @@
 //include any packages needed for the application
 const inquier=require("inquirer")
 const fs=require("fs")
-const { default: inquirer } = require("inquirer")
-const Triangle =require()
-const Circle =require()
-const Square =require()
+const Triangle =require("./lib/triangle")
+const Circle =require("./lib/circle")
+const Square =require("./lib/square")
 //bellow is an array of questions for user input
 const questions=[
     {
@@ -34,10 +33,18 @@ const questions=[
 inquirer.prompt(questions)
     .then(data=>{
         if(data.shape==="circle"){
-            
+            const triangle = new Circle(data.text,data.textColor,data.shapeColor)
+            fs.writeFile("./examples/circle.svg", triangle.render(), err=>{
+                console.log("sucess! circle.svg has been created please check the examples folder!")
+            })
+
         }
         else if (data.shape==="triangle"){
             const triangle = new Triangle(data.text,data.textColor,data.shapeColor)
-            fs.writeFile()
+            fs.writeFile("./examples/triangle.svg", triangle.render(), err=>{
+            console.log("sucess! triangle.svg has been created please check the examples folder!")
+            })
+        }else{
+
         }
     })
