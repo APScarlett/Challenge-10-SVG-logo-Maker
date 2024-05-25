@@ -1,7 +1,10 @@
 //include any packages needed for the application
 const inquier=require("inquirer")
 const fs=require("fs")
+const { default: inquirer } = require("inquirer")
 const Triangle =require()
+const Circle =require()
+const Square =require()
 //bellow is an array of questions for user input
 const questions=[
     {
@@ -26,3 +29,11 @@ const questions=[
         name:"shapeColor"
     }
 ]
+
+//requests user input
+inquirer.prompt(questions)
+    .then(data=>{
+        if(data.shape==="circle"){
+            
+        }
+    })
