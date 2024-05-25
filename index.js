@@ -11,8 +11,18 @@ const questions=[
         choices:["circle","triangle","square"]
     },
     {
-        type:
-        message:
-        name:
+        type:"input",
+        message:"Input a three letter text:",
+        name:"text"
+    },
+    {
+        type:"input",
+        message:"Pick a text color",
+        name:"textColor"
+    },
+    {
+        type:"input",
+        message:"Enter shape color:",
+        name:"shapeColor"
     }
 ]
