@@ -44,7 +44,12 @@ inquirer.prompt(questions)
             fs.writeFile("./examples/triangle.svg", triangle.render(), err=>{
             console.log("sucess! triangle.svg has been created please check the examples folder!")
             })
-        }else{
+        }
+        else{
+            const square = new Square(data.text,data.textColor,data.shapeColor)
+            fs.writeFile("./examples/square.svg", triangle.render(), err=>{
+                console.log("sucess! square.svg has been created please check the examples folder!")
+                })
 
         }
     })
