@@ -1,4 +1,3 @@
-const { describe } = require("yargs")
 const Circle=require("../lib/circle")
 const circle=new Circle("PLL","blue","black")
 describe("Circle", ()=>{
