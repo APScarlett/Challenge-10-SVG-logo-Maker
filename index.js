@@ -36,4 +36,8 @@ inquirer.prompt(questions)
         if(data.shape==="circle"){
             
         }
+        else if (data.shape==="triangle"){
+            const triangle = new Triangle(data.text,data.textColor,data.shapeColor)
+            fs.writeFile()
+        }
     })
