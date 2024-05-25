@@ -33,8 +33,8 @@ const questions=[
 inquirer.prompt(questions)
     .then(data=>{
         if(data.shape==="circle"){
-            const triangle = new Circle(data.text,data.textColor,data.shapeColor)
-            fs.writeFile("./examples/circle.svg", triangle.render(), err=>{
+            const circle = new Circle(data.text,data.textColor,data.shapeColor)
+            fs.writeFile("./examples/circle.svg", circle.render(), err=>{
                 console.log("sucess! circle.svg has been created please check the examples folder!")
             })
 
@@ -47,7 +47,7 @@ inquirer.prompt(questions)
         }
         else{
             const square = new Square(data.text,data.textColor,data.shapeColor)
-            fs.writeFile("./examples/square.svg", triangle.render(), err=>{
+            fs.writeFile("./examples/square.svg", square.render(), err=>{
                 console.log("sucess! square.svg has been created please check the examples folder!")
                 })
 
