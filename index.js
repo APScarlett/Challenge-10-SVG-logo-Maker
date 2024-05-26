@@ -1,5 +1,5 @@
 //include any packages needed for the application
-const inquier=require("inquirer")
+const inquirer=require("inquirer")
 const fs=require("fs")
 const Triangle =require("./lib/triangle")
 const Circle =require("./lib/circle")
